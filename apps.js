@@ -746,4 +746,11 @@ function buttonclick() {
 
 //mouse events 
 
+// the dom again my brothers and sisters 
+
+//DOM standing for document object model -here we are going to llearn how to intereact with the elemnt .finally we are going to be able to use all the knowledge and make a webpage dynamic 
+ 
+//we are going to cover on how to select items , traverse the dom , inserting and removing elements . applying style and adding and removing css elements 
+
+
 
