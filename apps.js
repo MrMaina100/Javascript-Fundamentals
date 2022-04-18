@@ -704,9 +704,9 @@ console.log(addedup);
 // header.style.color = 'red';
 
 
-const itemlist = document.querySelector('#items');
-console.log(itemlist.parentNode);
-itemlist.parentNode.style.backgroundcolor = 'blue';
+// const itemlist = document.querySelector('#items');
+// // console.log(itemlist.parentNode);
+// itemlist.parentNode.style.backgroundcolor = 'blue';
 
 //creating new elements 
 
@@ -734,15 +734,15 @@ console.log(newdiv);
 
 //events ( mouse events keyboard events )
 
-var button = document.getElementById('button').addEventListener('click', buttonclick)
+// var button = document.getElementById('button').addEventListener('click', buttonclick)
 
-function buttonclick() {
+// function buttonclick() {
 
- document.getElementById('header-title').textContent='wale wote tuna jua ni warazi';
- document.querySelector('#main').style.backgroundcolor = '#f45'; 
-    // console.log('clicked clicked ');
+//  document.getElementById('header-title').textContent='wale wote tuna jua ni warazi';
+//  document.querySelector('#main').style.backgroundcolor = '#f45'; 
+//     // console.log('clicked clicked ');
     
-}
+// }
 
 //mouse events 
 
@@ -756,3 +756,24 @@ function buttonclick() {
 
 //Get attribute set attribute 
 
+//okay okay the dom by traversy media .been having problem understandig this final part of javascript but anyway lets get into it 
+
+const formy =document.querySelector('#my-form');
+const nameinput =document.querySelector('#name');
+const emailinput =document.querySelector('#email');
+const msg =document.querySelector('.msg');
+const userlist =document.querySelector('#users');
+
+
+formy.addEventListener('submit', onsubmit);
+
+function onsubmit(e){
+    e.preventdefault();
+
+
+    if (nameinput.value==='' || emailinput.value==='') {
+        alert("please enter value");
+    }else {
+        console.log('success');
+    }
+}
